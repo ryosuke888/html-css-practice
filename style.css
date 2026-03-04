@@ -4,3 +4,9 @@
 .modal-footer {
     border-top: none!important;
 }
+.card {
+  width: 100%;
+  max-width: 18rem; /* 最大幅を固定 */
+  box-sizing: border-box; /* padding を幅に含める */
+  
+}
