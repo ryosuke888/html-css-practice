@@ -38,10 +38,42 @@
         </nav>
     </header>
     <main>
+        <!-- ログインフォーム　-->
+        <div class="container mt-5">
+        <!-- モーダルボタン -->
+            <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">ログイン</button>
+        </div>
+        <!-- モーダル　-->
+        <div class="modal fade" id="loginModal" data-bs-backdrop="static" aria-labelledby="loginModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" >
+                        <h3 class="modal-title" id="loginModalLabel">ログイン</h3>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                     <div class="modal-body">
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">メールアドレス</label>
+                                <input type="text" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">パスワード</label>
+                                <input type="text" class="form-control" id="password" name="password" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-secondary mt-3">ログイン</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 問い合わせフォーム -->
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-6">
-                    <form action="/sumbit" method="post">
+                    <form action="" method="post">
                         <div class="mb-3">
                             <label for="name" class="form-label">名前</label>
                             <input type="text" class="form-control" id="name" name="name" required>
